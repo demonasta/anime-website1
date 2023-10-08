@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Anime Club</title>
+    <style>
+        /* CSS for the background gradient */
+        body {
+            background: linear-gradient(to bottom, #3498db, #2c3e50); /* Gradient background colors */
+            color: #fff; /* Text color */
+            font-family: Arial, sans-serif; /* Font style */
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* CSS for the main heading */
+        h1 {
+            font-size: 36px;
+        }
+
+        /* CSS for the moving text animation */
+        @keyframes slide {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .moving-text {
+            font-size: 24px;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: slide 10s linear infinite;
+        }
+
+        /* CSS for anime titles list */
+        .anime-titles {
+            font-size: 20px;
+        }
+
+        .anime-titles ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .anime-titles li {
+            margin-bottom: 10px;
+        }
+
+        .anime-titles a {
+            text-decoration: none;
+            color: #f39c12; /* Link color */
+            transition: color 0.3s;
+        }
+
+        .anime-titles a:hover {
+            color: #e74c3c; /* Hover color */
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Anime Club</h1>
+    <p class="moving-text">Best Anime Titles Await You!</p>
+
+    <div class="anime-titles">
+        <h2>Some Interesting Anime Titles:</h2>
+        <ul>
+            <li><a href="#">Black Clover</a></li>
+            <li><a href="#">One Piece</a></li>
+            <li><a href="#">Attack on Titan</a></li>
+            <li><a href="#">My Hero Academia</a></li>
+            <li><a href="#">Death Note</a></li>
+            <!-- Add more anime titles as needed with placeholder "#" links -->
+        </ul>
+    </div>
+</body>
+</html>
