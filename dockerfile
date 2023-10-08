@@ -16,7 +16,8 @@ WORKDIR /app
 COPY . /app
 
 # Install any dependencies (e.g., Python HTTP server)
-RUN pip install http.server
+#RUN pip install http.server
+#because http.server exists in python 
 
 # Expose port 8000 to the outside world
 EXPOSE 8000
